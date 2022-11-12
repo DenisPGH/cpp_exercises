@@ -21,7 +21,8 @@ int main()
 
     cout.setf(ios::fixed);
     cout.precision(2);
-    std::cout << neededMoney;
+    std::cout << neededMoney; // test comment
+    std::cout << "op"; // test comment
     
 }
 

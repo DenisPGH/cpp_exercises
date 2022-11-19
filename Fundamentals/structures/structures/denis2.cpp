@@ -1,0 +1,1 @@
+export static int testmodule = 100;

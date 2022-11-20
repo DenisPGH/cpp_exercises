@@ -1,3 +1,2 @@
 ﻿  classInheritance.cpp
-C:\Users\Owner\Desktop\projects\cpp_exercises\Fundamentals\classInheritance\classInheritance\classInheritance.cpp(17,15): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
   classInheritance.vcxproj -> C:\Users\Owner\Desktop\projects\cpp_exercises\Fundamentals\classInheritance\Debug\classInheritance.exe

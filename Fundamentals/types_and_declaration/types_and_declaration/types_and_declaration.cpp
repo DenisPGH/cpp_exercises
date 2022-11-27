@@ -19,6 +19,10 @@ string type_of(T x) {
 int z = 1; // global declare
 
 template<typename MP>
+string return_variable_name(MP x,string search_) {
+    return to_string(x.at(search_));
+    
+}
 
 int main()
 {
@@ -85,9 +89,10 @@ int main()
     cout << "map :  " << typeid(a).name() << endl;
     // unordered map
     
-    unordered_map<string, MP> mp = {
+    unordered_map<string, int> mp = {
                             {"res1",res2}, };
     cout << "unordered map  " << mp.at("res1") << endl;
+    cout << "unordered map s funk " << return_variable_name(mp,"res1") << endl;
 
 
    /* for (int i = 0; i <= 12; ++i) {

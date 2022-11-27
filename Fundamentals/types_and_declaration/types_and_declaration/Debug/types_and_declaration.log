@@ -1,2 +1,3 @@
 ﻿  types_and_declaration.cpp
-  types_and_declaration.vcxproj -> C:\Users\Owner\Desktop\projects\cpp_exercises\Fundamentals\types_and_declaration\Debug\types_and_declaration.exe
+MSVCRTD.lib(exe_main.obj) : error LNK2019: unresolved external symbol _main referenced in function "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ)
+C:\Users\Owner\Desktop\projects\cpp_exercises\Fundamentals\types_and_declaration\Debug\types_and_declaration.exe : fatal error LNK1120: 1 unresolved externals

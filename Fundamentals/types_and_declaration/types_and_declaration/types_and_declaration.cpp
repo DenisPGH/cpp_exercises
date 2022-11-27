@@ -4,6 +4,7 @@
 #include <string>
 #include <typeinfo>
 #include <map>
+#include<unordered_map>
 using namespace std;
 
 float x(int y) {
@@ -16,6 +17,8 @@ string type_of(T x) {
     //return typename(x) ;
 }
 int z = 1; // global declare
+
+template<typename MP>
 
 int main()
 {
@@ -80,15 +83,20 @@ int main()
     
     auto a = string_var.find("res1");
     cout << "map :  " << typeid(a).name() << endl;
+    // unordered map
+    
+    unordered_map<string, MP> mp = {
+                            {"res1",res2}, };
+    cout << "unordered map  " << mp.at("res1") << endl;
 
 
-    for (int i = 0; i <= 12; ++i) {
-        auto searched_variable = "res"+ to_string(i);
+   /* for (int i = 0; i <= 12; ++i) {
+        auto searched_variable = mp.at("res"+ to_string(i));
         cout << searched_variable << endl;
         string type_get_res = type_of(searched_variable);
         cout << "reference_func return any type:  " << type_get_res << endl;
 
-    }
+    }*/
     
     
 }

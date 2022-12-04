@@ -1,6 +1,7 @@
 
 #include <iostream>
 #include <string>
+#include <vector>
 using namespace std;
 
 int* store_arr(int arr[], int len) {
@@ -15,7 +16,7 @@ int* store_arr(int arr[], int len) {
 
 void print_arr(int arr[],int size) {
     for (int i = 0; i<size; ++i) {
-        cout<< arr[i] << endl;
+        cout<< " number of index: "<<i <<" is "<< arr[i] << endl;
     }
 }
 
@@ -32,11 +33,10 @@ int* read_number(int arr[],int size){
 int main()
 {
     int size_arr; cin >> size_arr;
-    int arr[1];
-    // read next line string
-    string numbers; cin >> numbers;
-    for (auto& l : numbers) {
-        cout <<  l << endl;
+    int* arr = new int[size_arr];
+    for (int i = 0; i < size_arr; ++i) {
+        cin >> arr[i];
+        //cout << " num = " << arr[i];
     }
    
     //cout << "size of array = " << size_arr<< endl;
@@ -46,7 +46,7 @@ int main()
     
 
     //cout << "array ist = " << *res << endl;
-    //print_arr(res,size_arr);
+    print_arr(arr,size_arr);
 
     
     

@@ -79,7 +79,7 @@ int main()
 
     
     for (auto& k : most_numbers) {
-        cout << " all most: " << k<< endl;
+        //cout << " all most: " << k<< endl;
         if (number_count[k] == most_num_value) {
             cout << k << " ";
         }

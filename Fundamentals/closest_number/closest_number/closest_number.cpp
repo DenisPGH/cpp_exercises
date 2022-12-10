@@ -1,10 +1,7 @@
 
 #include <iostream>
-#include <string>
-#include <vector>
-#include <unordered_map>
-#include <algorithm>
 #include <stdlib.h> 
+#include <limits>
 
 using namespace std;
 
@@ -35,24 +32,22 @@ int main()
         cin >> arr[i];
         //cout << " num = " << arr[i];
     }
-    //print_arr(arr, size_arr); // test if reading works
-
-    // find closest number 
-    int first_num = 0;
-    int second_num = 0;
-    int diff = INT16_MAX;
+   
+    int diff = numeric_limits<int>::max();
+    bool is = 0;
     for (int x = 0; x < size_arr; ++x) {
         for (int y = 0; y < size_arr; ++y) {
             int diff_current = abs(arr[x] - arr[y]);
-            if ( diff_current< diff && arr[x] != arr[y]) { first_num = arr[x]; second_num = arr[y]; diff=diff_current; }
+            if (size_arr==1) { cout << 0; is = 1; break; }
+            else if ( diff_current< diff && x != y) { diff=diff_current; }
         }
         
 
 
     }
 
-    //cout<< "num a: " << first_num << " , " << "   num b: " << second_num<< "  diff : " << diff << endl; 
-    cout << diff << endl;
+   if (is ==0){ cout << diff << endl; }
+   
     return 0;
 }
 
